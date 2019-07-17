@@ -43,7 +43,7 @@ try {
 
           // BUILD VERIFICATION STAGE
           stage ('Verify Build') {
-              openshiftVerifyBuild(bldCfg: env.APP_NAME, namespace: env.DEV)
+              openshiftVerifyBuild(bldCfg: env.APP_NAME, namespace: env.BUILD)
           }
 
           // FUNCTIONAL TESTING
